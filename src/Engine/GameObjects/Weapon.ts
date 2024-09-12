@@ -1,0 +1,77 @@
+import { AbstractType } from "@/Engine/GameObjects/AbstractType";
+import { ObjectTypeManager } from "@/Engine/GameObjects/ObjectTypeManager";
+import { Projectile } from "@/Engine/GameObjects/Projectile";
+import { Sound } from "@/Engine/GameObjects/Sound";
+import { Vector } from "@/Engine/Vector";
+import { Warhead } from "@/Engine/GameObjects/Warhead";
+import { Color } from "@/Resources/Color";
+import { IniSection } from "@/Resources/IniSection";
+
+export class Weapon extends AbstractType {
+  private _ambientDamage: number;
+  private _isSonic: boolean;
+  private _spawner: boolean;
+  private _limboLaunch: boolean;
+  private _decloackToFire: boolean;
+  private _cellRangeFinding: boolean;
+  private _fireOnce: boolean;
+  private _neverUse: boolean;
+  private _revealOnFire: boolean;
+  private _terrainFire: boolean;
+  private _sabotageCursor: boolean;
+  private _migAttackCursor: boolean;
+  private _disguiseFireOnly: boolean;
+  private _infiniteMindControl: boolean;
+  private _fireWhileMoving: boolean;
+  private _drainWeapon: boolean;
+  private _fireInTransport: boolean;
+  private _disguiseFakeBlinkTime: boolean;
+  private _suicide: boolean;
+  private _supress: boolean;
+  private _burst: number;
+  private _damage: number;
+  private _speed: number;
+  private _rateOfFire: number;
+  private _range: number;
+  private _minimumRange: number;
+  private _report: Sound[];
+  private _downReport: Sound[];
+  private _anim: Animation[];
+  private _assaultAnim: Animation;
+  private _occupantAnim: Animation;
+  private _openToppedAnim: Animation;
+  private _camera: boolean;
+  private _isLaser: boolean;
+  private _diskLaser: boolean;
+  private _isLine: boolean;
+  private _isHouseColor: boolean;
+  private _charges: boolean;
+  private _turboBoost: boolean;
+  private _useFireParticles: boolean;
+  private _useSparkParticles: boolean;
+  private _omniFire: boolean;
+  private _distributedWeaponFire: boolean;
+  private _isRailGun: boolean;
+  private _lobber: boolean;
+  private _laserInnerColor: Color;
+  private _laserOuterColor: Color;
+  private _laserOuterSpread: Vector;
+  private _laserOuterDuration: number;
+  private _isBigLaser: boolean;
+  private _bright: boolean;
+  private _ionSensitive: boolean;
+  private _areaFire: boolean;
+  private _isElectricBolt: boolean;
+  private _drawBoltAsLaser: boolean;
+  private _isAlternateColor: boolean;
+  private _isRadBeam: boolean;
+  private _isRadEruption: boolean;
+  private _radLevel: number;
+  private _isMagBeam: number;
+  private _warhead: Warhead;
+  private _projectile: Projectile;
+
+  constructor(ini: IniSection, otm: ObjectTypeManager) {
+    super(ini, otm);
+  }
+}

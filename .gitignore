@@ -1,0 +1,10 @@
+dist/Utils/MapRenderer/*
+dist/Utils/MixViewer/*
+dist/Worker/*
+dist/*
+!dist/index.html
+!dist/Utils/MixViewer/index.html
+!dist/Utils/MapRenderer/index.html
+node_modules
+yarn-error.log
+.DS_Store

@@ -1,0 +1,45 @@
+{
+  "name": "ra2ts",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite dev",
+    "test": "vitest",
+    "lint": "eslint ./src"
+  },
+  "devDependencies": {
+    "@types/ini": "^1.3.31",
+    "@types/node-forge": "^1.3.1",
+    "@types/node-rsa": "^1.1.1",
+    "@types/react": "^18.0.26",
+    "@types/react-dom": "^18.0.9",
+    "@types/three": "^0.146.0",
+    "@typescript-eslint/eslint-plugin": "^5.47.1",
+    "@typescript-eslint/parser": "^5.47.1",
+    "eslint": "^8.30.0",
+    "vite": "^4.3.5",
+    "vite-plugin-circular-dependency": "^0.2.1",
+    "vitest": "^0.31.0"
+  },
+  "dependencies": {
+    "@chakra-ui/icons": "^2.0.13",
+    "@chakra-ui/react": "^2.4.3",
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "crc-32": "^1.2.2",
+    "framer-motion": "^7.6.19",
+    "idb": "^7.1.1",
+    "ima-adpcm-decoder": "^1.0.0",
+    "ini": "^3.0.1",
+    "js-base64": "^3.7.5",
+    "node-forge": "^1.3.1",
+    "pcx-js": "^1.1.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "reflect-metadata": "^0.1.13",
+    "three": "^0.147.0",
+    "typescript": "^4.9.4"
+  }
+}
